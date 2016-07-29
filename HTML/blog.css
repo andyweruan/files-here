@@ -1,0 +1,32 @@
+h1, h2 {
+  font-style: italic;
+}
+
+a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+a:visited {
+  color:purple;
+}
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: black;
+  text-decoration: underline;
+}
+
+img {
+  background-color: red;
+  border: solid 1px black;
+  /*
+  For padding, 4 numbers for 4 different paddings clockwise,
+  2 number will be, first number top and bottle, second left and right
+  */
+  border-radius: 10px;
+  padding: 5px 20px;
+  margin: 50px;
+}

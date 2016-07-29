@@ -1,0 +1,32 @@
+img {
+  display: block;
+}
+
+p {
+  /* display: inline; */
+}
+
+section.content {
+  position: relative;
+  top: 100px;
+  border: solid 1px black;
+}
+section.header {
+  background-color: lightblue;
+  position: fixed;
+  right: 0px;
+  width: 300px;
+  z-index: 10;
+}
+
+section p {
+  float: left;
+}
+
+section img {
+  float: right;
+}
+
+section .clear {
+  clear: both;
+}

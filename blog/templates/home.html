@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<title<MY Blog</title>
+
+Welcome to my blog.
+<style>
+  body{
+    background-color: blue
+    font-family: cursive;
+  }
+
+</style>
+
+
+<form  method = "post" action = "">
+  <input name = "title" placeholder="Title goes here">
+  <br>
+  <textarea name = "text" placeholder="What is on your mind"></textarea>
+  <button>Post it</button>
+
+</form>
+
+{% for post in posts%}
+  <article>
+    <h2>
+      <a href="{{ post.url()}}" >
+      {{post.title}}:
+    </a>
+    </h2>
+    <br>
+    {{post.text}}
+    <br>
+    <div class = "date"> {{post.date}}</div>
+  </article>
+{% endfor %}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<title>CSSI Roster</title>
+<h1>CSSI Roster</h1>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+#team_red {
+  background-color: red;
+}
+#team_yellow {
+  background-color: yellow;
+}
+#team_blue {
+  background-color: blue;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>University</th>
+    <th>Team</th>
+  </tr>
+    {% for student in students %}
+    <tr>
+
+
+      <td>
+        <a href="{{ student.url() }}">
+        {{student.name}}
+      </td>
+
+
+      <td>{{student.university}}</td>
+      {% if student.team == 'r' %}
+        <td id = "team_red" >{{student.team}}</td>
+      {% elif student.team == 'y' %}
+        <td id = "team_yellow" >{{student.team}}</td>
+      {% else %}
+        <td id = "team_blue" >{{student.team}}</td>
+      {% endif %}
+    </tr>
+    {% endfor %}
+
+
+</table>
+
+
+<h1>Enter a Student</h1>
+        <form method="post" action ="">
+         <h3>Enter your name: <input type="text" name="name"/></h3>
+         <h3>Enter University: <input type="text" name="university"/></h3>
+         <h3>What's your team: </h3>
+         <input type="radio" name="team_color" value="b">Mystic
+     <br>
+          <input type="radio" name="team_color" value="y">Instinct
+      <br>
+          <input type="radio" name="team_color" value="r">Valor
+      <br>
+        <p><input type="submit" value="Submit"></p>
+ </form>
+</body>
+</html>

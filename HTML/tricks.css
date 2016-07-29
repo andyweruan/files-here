@@ -1,0 +1,11 @@
+#clickhere {
+  font-size: 64px;
+  transition: all .2s ease-in-out;
+
+}
+
+#clickhere:hover {
+  transform: scale(1.1s);
+  transform: rotate(1turn);
+  opacity: 0;
+}

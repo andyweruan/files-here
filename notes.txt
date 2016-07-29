@@ -1,0 +1,357 @@
+MacBook-Air-9:python1 demouser$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> name = "Andy Ruan"
+>>> name
+'Andy Ruan'
+>>> print name
+Andy Ruan
+>>> 
+>>> type(name)
+<type 'str'>
+>>> year = 2016
+>>> type(year)
+<type 'int'>
+>>> youtube = 9.99
+>>> type(youtube)
+<type 'float'>
+>>> 
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()
+MacBook-Air-9:python1 demouser$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+MacBook-Air-9:python1 demouser$ .
+-bash: .: filename argument required
+.: usage: . filename [arguments]
+MacBook-Air-9:python1 demouser$ ls
+practice.py
+MacBook-Air-9:python1 demouser$ python practice.py 
+hello
+world
+MacBook-Air-9:python1 demouser$ 
+MacBook-Air-9:python1 demouser$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 30/5
+6
+>>> 5/2
+2
+>>> 5.0/2
+2.5
+>>> name = 'Andy'
+>>> 
+>>> my_math = 3 + 1 - 2 * 2 / 4
+>>> print my_math
+3
+>>> a = 25
+>>> b = 36
+>>> 
+>>> print a * b
+900
+>>> print a * b
+900
+>>> 
+>>> 
+>>> exit()
+MacBook-Air-9:python1 demouser$ python practice.py 
+900
+RalphWhiskers
+My favorite band is The Beatles
+The president of the US is Barack Obama
+When I listen to NICKI minaj I feel like my brain is melting.
+Hi. I'm BILL. I'm from nEW yORKand in ten years I'm going to be 26
+MacBook-Air-9:python1 demouser$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x = 34679
+>>> y = 566
+>>> z = 47
+>>> product = x * y * z
+>>> sum = x + y + z
+>>> sum
+35292
+>>> product - sum
+922495466
+>>> exit()
+MacBook-Air-9:python1 demouser$ ls
+picknum.py	practice.py
+MacBook-Air-9:python1 demouser$ python picknum.py 
+  File "picknum.py", line 3
+    if(num[0] == '('&& num[4] == ")" && num[1:4].isDigit() && num.len() == 13):
+                     ^
+SyntaxError: invalid syntax
+MacBook-Air-9:python1 demouser$ python picknum.py 
+  File "picknum.py", line 3
+    if(num[0] == '(' and num[4] == ")" && num[1:4].isDigit() && num.len() == 13):
+                                        ^
+SyntaxError: invalid syntax
+MacBook-Air-9:python1 demouser$ python picknum.py 
+  File "picknum.py", line 3
+    if(num[0] == '(' and num[4] == ")" && num[1:4].isDigit() && num.len() == 13):
+                                        ^
+SyntaxError: invalid syntax
+MacBook-Air-9:python1 demouser$ python picknum.py 
+  File "picknum.py", line 3
+    if(num[0] == '(' and num[4] == ")" and num[1:4].isDigit() && num.len() == 13):
+                                                               ^
+SyntaxError: invalid syntax
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Input Phone Number        
+Traceback (most recent call last):
+  File "picknum.py", line 3, in <module>
+    if(num[0] == '(' and num[4] == ")" and num[1:4].isDigit() and num.len() == 13):
+IndexError: string index out of range
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Input Phone Number(415)734-7203
+Traceback (most recent call last):
+  File "picknum.py", line 3, in <module>
+    if(num[0] == '(' and num[4] == ")" and num[1:4].isDigit() and num.len() == 13):
+AttributeError: 'str' object has no attribute 'isDigit'
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Input Phone Numberih4ibi23b4ih2i
+Traceback (most recent call last):
+  File "picknum.py", line 6, in <module>
+    if(dig.isDigit()):
+AttributeError: 'str' object has no attribute 'isDigit'
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Input Phone Numberni4n3ihi4b5
+Traceback (most recent call last):
+  File "picknum.py", line 7, in <module>
+    print true
+NameError: name 'true' is not defined
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Input Phone Numberj4n53n53k4l
+True
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Input Phone Number163638
+Traceback (most recent call last):
+  File "picknum.py", line 6, in <module>
+    if(num.len() == 13 and dig.len() == 10 and num[0] == '(' and num[0] == ')' and num[8] == '-'):
+AttributeError: 'str' object has no attribute 'len'
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Input Phone Number52932
+Number not formatted corectly
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Input Phone Number:    (415)734-7203
+Number not formatted corectly
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Input Phone Number:    4157347203
+Number not formatted corectly
+MacBook-Air-9:python1 demouser$ python picknum.py 
+  File "picknum.py", line 8
+    and len(num) == 10
+      ^
+SyntaxError: invalid syntax
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Input Phone Number:    (415)732-7203
+Number not formatted corectly
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Input Phone Number:    (415)734-7203
+Number not formatted corectly
+MacBook-Air-9:python1 demouser$ python picknum.py 
+  File "picknum.py", line 2
+    num = (415)734-7203
+                 ^
+SyntaxError: invalid syntax
+MacBook-Air-9:python1 demouser$ python picknum.py 
+13
+10
+True
+True
+True
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Number formatted correctly
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Number formatted correctly
+MacBook-Air-9:python1 demouser$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> range(1, 10)
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> exit()
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Number formatted correctly
+(
+4
+1
+5
+)
+7
+3
+4
+-
+7
+2
+0
+3
+MacBook-Air-9:python1 demouser$ python picknum.py 
+  File "picknum.py", line 12
+    dig++
+        ^
+SyntaxError: invalid syntax
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Traceback (most recent call last):
+  File "picknum.py", line 15, in <module>
+    if(len(num) == 13 and len(dig) == 10 and num[0] == '(' and num[4] == ')' and num[8] == '-'):
+TypeError: object of type 'int' has no len()
+MacBook-Air-9:python1 demouser$ python picknum.py 
+Number formatted correctly
+MacBook-Air-9:python1 demouser$ python minilist.py 
+MacBook-Air-9:python1 demouser$ python minilist.py 
+MacBook-Air-9:python1 demouser$ python minilist.py 
+[2, 52, 19, 46, 1000]
+MacBook-Air-9:python1 demouser$ python minilist.py 
+[7, 57, 24, 51, 1005]
+MacBook-Air-9:python1 demouser$ python minilist.py 
+[6, 31, 14, 28, 505]
+MacBook-Air-9:python1 demouser$ python minilist.py 
+[6, 31, 14, 28, 505]
+John Quincy Adams
+James Monroe
+James Madison
+Thomas Jefferson
+John Adams
+George Washington
+MacBook-Air-9:python1 demouser$ python minilist.py 
+[6, 31, 14, 28, 505]
+John Quincy Adams
+James Monroe
+James Madison
+Thomas Jefferson
+John Adams
+George Washington
+MacBook-Air-9:python1 demouser$ python minilist.py 
+[6, 31, 14, 28, 505]
+John Quincy Adams
+James Monroe
+James Madison
+Thomas Jefferson
+John Adams
+George Washington
+Traceback (most recent call last):
+  File "minilist.py", line 12, in <module>
+    print i + "bottles of milk on the wall"
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+MacBook-Air-9:python1 demouser$ python minilist.py 
+[6, 31, 14, 28, 505]
+John Quincy Adams
+James Monroe
+James Madison
+Thomas Jefferson
+John Adams
+George Washington
+10bottles of milk on the wall
+9bottles of milk on the wall
+8bottles of milk on the wall
+7bottles of milk on the wall
+6bottles of milk on the wall
+5bottles of milk on the wall
+4bottles of milk on the wall
+3bottles of milk on the wall
+2bottles of milk on the wall
+1bottles of milk on the wall
+MacBook-Air-9:python1 demouser$ python minilist.py 
+[6, 31, 14, 28, 505]
+John Quincy Adams
+James Monroe
+James Madison
+Thomas Jefferson
+John Adams
+George Washington
+10 bottles of milk on the wall
+9 bottles of milk on the wall
+8 bottles of milk on the wall
+7 bottles of milk on the wall
+6 bottles of milk on the wall
+5 bottles of milk on the wall
+4 bottles of milk on the wall
+3 bottles of milk on the wall
+2 bottles of milk on the wall
+1 bottles of milk on the wall
+MacBook-Air-9:python1 demouser$ python minilist.py 
+[6, 31, 14, 28, 505]
+John Quincy Adams
+James Monroe
+James Madison
+Thomas Jefferson
+John Adams
+George Washington
+Traceback (most recent call last):
+  File "minilist.py", line 13, in <module>
+    presidents[i].reverse()
+AttributeError: 'str' object has no attribute 'reverse'
+MacBook-Air-9:python1 demouser$ ls
+fave.py		minilist.py	note.py		picknum.py	practice.py
+MacBook-Air-9:python1 demouser$ phyton fave.py 
+-bash: phyton: command not found
+MacBook-Air-9:python1 demouser$ python fave.py 
+  File "fave.py", line 1
+    food = (raw_input('What's your favorite food?  ')).Upper()
+                            ^
+SyntaxError: invalid syntax
+MacBook-Air-9:python1 demouser$ python fave.py 
+What's your favorite food?  pizza
+Traceback (most recent call last):
+  File "fave.py", line 1, in <module>
+    food = (raw_input('What\'s your favorite food?  ')).Upper()
+AttributeError: 'str' object has no attribute 'Upper'
+MacBook-Air-9:python1 demouser$ python fave.py 
+What's your favorite food?  pizza
+MacBook-Air-9:python1 demouser$ python fave.py 
+What's your favorite food?  pizza
+IIIIAAAAA
+MacBook-Air-9:python1 demouser$ python fave.py 
+What's your favorite food?  pizza
+PIIIIIZZAAAAA
+MacBook-Air-9:python1 demouser$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> c * 
+  File "<stdin>", line 1
+    c * 
+       ^
+SyntaxError: invalid syntax
+>>> c * 5
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'c' is not defined
+>>> 'c' * 5
+'ccccc'
+>>> exit()
+MacBook-Air-9:python1 demouser$ python fave.py 
+What's your favorite food?  pizza
+PIIIIIIZZAAAAAA
+MacBook-Air-9:python1 demouser$ touch invitation.py&
+[1] 3017
+MacBook-Air-9:python1 demouser$ ls
+fave.py		invitation.py	minilist.py	note.py		picknum.py	practice.py
+[1]+  Done                    touch invitation.py
+MacBook-Air-9:python1 demouser$ touch ginny_invitation.py &
+[1] 3070
+MacBook-Air-9:python1 demouser$ ls
+dictionary.py		ginny_invitation.py	minilist.py		picknum.py
+fave.py			invitation.py		note.py			practice.py
+[1]+  Done                    touch ginny_invitation.py
+MacBook-Air-9:python1 demouser$ python dictionary.py 
+green juice costs $9.99
+MacBook-Air-9:python1 demouser$ python dictionary.py 
+green juice costs $9.99
+{'carrot': 5.0, 'green': 2.99, 'rubby': 15.0}
+MacBook-Air-9:python1 demouser$ python dictionary.py 
+green juice costs $9.99
+{'carrot': 5.0, 'green': 2.99, 'rubby': 15.0}
+{'orange': 1.99, 'carrot': 5.0, 'green': 2.99, 'rubby': 15.0}
+MacBook-Air-9:python1 demouser$ python dictionary.py 
+  File "dictionary.py", line 36
+SyntaxError: Non-ASCII character '\xc3' in file dictionary.py on line 36, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+MacBook-Air-9:python1 demouser$ 
